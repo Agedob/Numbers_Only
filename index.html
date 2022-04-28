@@ -4,9 +4,10 @@
     	<meta charset="utf-8">
       <title>Numbers only.</title>
     </head>
-    <!-- <body>
+    <body>
         <script>
             function newarr(arr){
+                console.log(arr);
                 var x = [];
                 for(var i = 0;i < arr.length; i++){
                     if(typeof arr[i] == "number"){
@@ -15,14 +16,14 @@
                     }
                  return x;
                 }
-            console.log(newarr(["monkey", 1, "alsomonkey", 2, "jumpingonthebed", 3]));
-        </script>
-    </body> -->
-    <body>
-        <script>
-
-            
-
+            document.write(newarr(["monkey", 1, "alsomonkey", 2, "jumpingonthebed", 3, 82, 1, 1, 1, 'abc', 'abc', 1]));
         </script>
     </body>
+    <!-- I planned on redoing this code but can't think of a way to beised splice() here are some other syntax I learned attempting
+    to recreate the code 
+    .concat() will concatinate 2 arrays togeather
+    .pop removes last item in array 
+    .shift will pull the first item of an array
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+     -->
 </html>
